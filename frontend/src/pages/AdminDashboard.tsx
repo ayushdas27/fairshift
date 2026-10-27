@@ -561,11 +561,11 @@ export const AdminDashboard: React.FC<Props> = ({
                   <tr key={p.id} className="hover:bg-[#faf9f6]">
                     <td className="py-2 px-3 font-medium text-[#141515]">{p.worker_name || 'Elena Rostova'}</td>
                     <td className="py-2 px-3 text-[#5e5e5e]">{p.period_label || 'Oct 1 – Oct 14'}</td>
-                    <td className="py-2 px-3">${p.base_pay?.toFixed(2)}</td>
-                    <td className="py-2 px-3 text-[#8c5e14] font-medium">${p.overtime_earnings?.toFixed(2)}</td>
-                    <td className="py-2 px-3 text-[#2e6930]">+${p.allowances?.toFixed(2)}</td>
-                    <td className="py-2 px-3 font-semibold">${p.gross_pay?.toFixed(2)}</td>
-                    <td className="py-2 px-3 font-bold text-[#141515]">${p.net_pay?.toFixed(2)}</td>
+                    <td className="py-2 px-3">₹{p.base_pay?.toFixed(2)}</td>
+                    <td className="py-2 px-3 text-[#8c5e14] font-medium">₹{p.overtime_earnings?.toFixed(2)}</td>
+                    <td className="py-2 px-3 text-[#2e6930]">+₹{p.allowances?.toFixed(2)}</td>
+                    <td className="py-2 px-3 font-semibold">₹{p.gross_pay?.toFixed(2)}</td>
+                    <td className="py-2 px-3 font-bold text-[#141515]">₹{p.net_pay?.toFixed(2)}</td>
                     <td className="py-2 px-3">
                       <span
                         className={`px-1.5 py-0.5 rounded text-[10px] font-semibold uppercase ${

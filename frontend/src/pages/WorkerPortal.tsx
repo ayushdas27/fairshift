@@ -563,7 +563,7 @@ export const WorkerPortal: React.FC<Props> = ({ user, lang, onLogout }) => {
                         {t.grossEarnings}
                       </span>
                       <div className="text-3xl font-bold font-tabular text-[#141515] mt-1">
-                        ${selectedPayslip.gross_pay?.toFixed(2)}
+                        ₹{selectedPayslip.gross_pay?.toFixed(2)}
                       </div>
                       <p className="text-xs text-[#5e5e5e] mt-1">
                         {selectedPayslip.calculation_notes ||
@@ -575,7 +575,7 @@ export const WorkerPortal: React.FC<Props> = ({ user, lang, onLogout }) => {
                       <div className="flex justify-between">
                         <span className="text-[#5e5e5e]">{t.netPayable}:</span>
                         <span className="font-bold text-[#2e6930] font-tabular">
-                          ${selectedPayslip.net_pay?.toFixed(2)}
+                          ₹{selectedPayslip.net_pay?.toFixed(2)}
                         </span>
                       </div>
                       <div className="flex justify-between">
@@ -598,12 +598,12 @@ export const WorkerPortal: React.FC<Props> = ({ user, lang, onLogout }) => {
                           <div>
                             <span className="font-medium text-[#141515]">{t.baseHourly}</span>
                             <span className="block text-[11px] text-[#5e5e5e]">
-                              ${selectedPayslip.base_rate?.toFixed(2)}/hr standard tier
+                              ₹{selectedPayslip.base_rate?.toFixed(2)}/hr standard tier
                             </span>
                           </div>
                           <span>{selectedPayslip.base_hours} hrs</span>
                           <span className="font-semibold text-[#141515]">
-                            ${selectedPayslip.base_pay?.toFixed(2)}
+                            ₹{selectedPayslip.base_pay?.toFixed(2)}
                           </span>
                         </div>
 
@@ -611,12 +611,12 @@ export const WorkerPortal: React.FC<Props> = ({ user, lang, onLogout }) => {
                           <div>
                             <span className="font-medium text-[#141515]">{t.overtime15x}</span>
                             <span className="block text-[11px] text-[#5e5e5e]">
-                              ${selectedPayslip.overtime_rate?.toFixed(2)}/hr rate parity
+                              ₹{selectedPayslip.overtime_rate?.toFixed(2)}/hr rate parity
                             </span>
                           </div>
                           <span>{selectedPayslip.overtime_hours} hrs</span>
                           <span className="font-semibold text-[#141515]">
-                            ${selectedPayslip.overtime_earnings?.toFixed(2)}
+                            ₹{selectedPayslip.overtime_earnings?.toFixed(2)}
                           </span>
                         </div>
 
@@ -627,7 +627,7 @@ export const WorkerPortal: React.FC<Props> = ({ user, lang, onLogout }) => {
                           </div>
                           <span>Flat</span>
                           <span className="font-semibold text-[#2e6930]">
-                            +${selectedPayslip.allowances?.toFixed(2)}
+                            +₹{selectedPayslip.allowances?.toFixed(2)}
                           </span>
                         </div>
 
@@ -638,7 +638,7 @@ export const WorkerPortal: React.FC<Props> = ({ user, lang, onLogout }) => {
                           </div>
                           <span>Govt</span>
                           <span className="font-semibold text-[#a82a2a]">
-                            -${selectedPayslip.deductions?.toFixed(2)}
+                            -₹{selectedPayslip.deductions?.toFixed(2)}
                           </span>
                         </div>
                       </div>
