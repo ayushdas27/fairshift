@@ -1,10 +1,23 @@
-# FairShift Google Cloud Run Deployment Guide
+# FairShift Production Deployment Guide
 
-This guide details deploying FairShift to **Google Cloud Run** with **Cloud SQL (PostgreSQL)** and **Secret Manager**.
+This guide details deploying FairShift to **Vercel Serverless Production** and **Google Cloud Run** with **Cloud SQL (PostgreSQL)** and **Secret Manager**.
 
 ---
 
-## 1. Prerequisites
+## 1. Live Vercel Production Deployment
+- **Production URL:** [https://fairshift-sandy.vercel.app](https://fairshift-sandy.vercel.app)
+- **Deployment URL:** [https://fairshift-12tshl38a-ayushdps2020-4199s-projects.vercel.app](https://fairshift-12tshl38a-ayushdps2020-4199s-projects.vercel.app)
+- **Health Check Endpoint:** `https://fairshift-sandy.vercel.app/health`
+- **Configuration:** `vercel.json` maps frontend static assets from `frontend/package.json` (`@vercel/static-build`) and routes `/api/v1/*`, `/health`, and `/docs` to `@vercel/python` via `api/index.py`.
+
+Deploy command:
+```bash
+npx vercel --prod --yes
+```
+
+---
+
+## 2. Google Cloud Run Deployment
 - Google Cloud Platform (GCP) project with billing enabled.
 - Google Cloud CLI (`gcloud`) installed and authenticated.
 - Docker or Google Cloud Build.

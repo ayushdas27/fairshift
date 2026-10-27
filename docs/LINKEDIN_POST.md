@@ -39,7 +39,8 @@ Built with an **Adaptive Viewport Zoom Engine (80% to 150%)** and complete multi
 ---
 
 🔗 **Repository:** https://github.com/ayushdas27/fairshift.git  
-🚀 **Live Prototype & Demo:** https://fairshift-7ba0c6c3-uc.a.run.app  
+🚀 **Live Production Prototype (Vercel):** https://fairshift-sandy.vercel.app  
+🌐 **Cloud Run Deployment Guide:** Included in repository docs/DEPLOYMENT.md  
 
 A huge thank you to the hackathon organizers and mentors for championing UN SDG 8 and technological innovation for decent work.
 

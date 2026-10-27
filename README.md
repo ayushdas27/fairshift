@@ -157,8 +157,15 @@ npm run test
 
 ---
 
-## 8. Google Cloud Run Deployment
+## 8. Live Production & Cloud Deployment
 
+### Live Vercel Production Deployment
+- **Production URL:** [https://fairshift-sandy.vercel.app](https://fairshift-sandy.vercel.app)
+- **Deployment URL:** [https://fairshift-12tshl38a-ayushdps2020-4199s-projects.vercel.app](https://fairshift-12tshl38a-ayushdps2020-4199s-projects.vercel.app)
+- **Health Check Endpoint:** [https://fairshift-sandy.vercel.app/health](https://fairshift-sandy.vercel.app/health)
+- **Architecture:** Client SPA (Vite + React 19) + Serverless Python API Gateway (`@vercel/python` routing `/api/v1/*` into FastAPI core engine).
+
+### Google Cloud Run Deployment
 Build and run with Docker:
 ```bash
 docker build -t fairshift:latest .
