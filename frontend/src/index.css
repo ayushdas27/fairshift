@@ -1,42 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
 @import "tailwindcss";
 
-@layer base {
-  @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+:root {
+  --app-zoom: 1;
+  --surface: #faf9f6;
+  --surface-card: #ffffff;
+  --surface-muted: #f2f0eb;
+  --surface-hover: #efeee9;
+  --border-hairline: #e7e5e0;
+  --text-primary: #1b1c1c;
+  --text-secondary: #737373;
+  --action-primary: #292929;
+  --status-success: #2e6930;
+  --status-warning: #8c5e14;
+  --status-error: #a82a2a;
+}
 
-  :root {
-    --app-zoom: 1;
-    --surface: #faf9f6;
-    --surface-card: #ffffff;
-    --surface-muted: #f2f0eb;
-    --surface-hover: #efeee9;
-    --border-hairline: #e7e5e0;
-    --text-primary: #1b1c1c;
-    --text-secondary: #737373;
-    --action-primary: #292929;
-    --status-success: #2e6930;
-    --status-warning: #8c5e14;
-    --status-error: #a82a2a;
-  }
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #faf9f6;
+  color: #1b1c1c;
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
 
-  html, body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--surface);
-    color: var(--text-primary);
-    font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    -webkit-font-smoothing: antialiased;
-  }
+.font-tabular {
+  font-variant-numeric: tabular-nums;
+}
 
-  .font-tabular {
-    font-variant-numeric: tabular-nums;
-  }
-
-  /* Adaptive zoom container with clamp [80%, 150%] */
-  #adaptive-root {
-    transform-origin: top center;
-    transition: transform 0.15s ease-out;
-  }
+#adaptive-root {
+  transform-origin: top center;
+  transition: transform 0.15s ease-out;
 }
 
 .material-symbols-outlined {
